@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src_main_java"/>
+	<classpathentry kind="src" path="src_game_java"/>
+	<classpathentry kind="src" path="src_protocol-game_java"/>
+	<classpathentry kind="src" path="src_protocol-relay_java"/>
+	<classpathentry kind="src" path="src_lwjgl_java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="deps_fix/codecjorbis-20101023.jar"/>
+	<classpathentry kind="lib" path="deps_fix/codecwav-20101023.jar"/>
+	<classpathentry kind="lib" path="deps_fix/Java-WebSocket-1.5.1-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="deps_fix/soundsystem-20120107.jar"/>
+	<classpathentry kind="lib" path="deps_fix/webrtc-java-0.8.0.jar"/>
+	<classpathentry kind="lib" path="deps_fix/UnsafeMemcpy.jar"/>
+	<classpathentry kind="lib" path="deps_fix/hppc-0.10.0.jar"/>
+	<classpathentry kind="lib" path="deps_fix/jsr305-3.0.2.jar"/>
+	<classpathentry kind="lib" path="deps_fix/commons-lang3-3.6.jar"/>
+	<classpathentry kind="lib" path="deps_fix/lwjgl-3.3.6.jar"/>
+	<classpathentry kind="lib" path="deps_fix/lwjgl-egl-3.3.6.jar"/>
+	<classpathentry kind="lib" path="deps_fix/lwjgl-glfw-3.3.6.jar"/>
+	<classpathentry kind="lib" path="deps_fix/lwjgl-jemalloc-3.3.6.jar"/>
+	<classpathentry kind="lib" path="deps_fix/lwjgl-openal-3.3.6.jar"/>
+	<classpathentry kind="lib" path="deps_fix/lwjgl-opengles-3.3.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
