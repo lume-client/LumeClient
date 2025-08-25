@@ -81,6 +81,9 @@ public class PlatformOpenGL {
 		_wglClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 	}
 
+	@Import(module = "platformOpenGL", name = "glScissor")
+	public static native void _wglScissor(int x, int y, int width, int height);
+
 	@Import(module = "platformOpenGL", name = "getCapBits")
 	static native int getCapBits(int idx);
 

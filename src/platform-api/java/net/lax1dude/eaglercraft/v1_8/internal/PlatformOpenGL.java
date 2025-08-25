@@ -23,6 +23,7 @@ import net.lax1dude.eaglercraft.v1_8.internal.buffer.FloatBuffer;
 import net.lax1dude.eaglercraft.v1_8.internal.buffer.IntBuffer;
 
 public class PlatformOpenGL {
+	public static native void _glScissor(int x, int y, int width, int height);
 
 	public static native void _wglEnable(int glEnum);
 

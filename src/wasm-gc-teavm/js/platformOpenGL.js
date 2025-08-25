@@ -83,6 +83,7 @@ function setCurrentGLContext(ctx, glesVersIn, allowExts, glImports) {
 		return capBits[idx];
 	};
 	
+	glImports["glScissor"] = ctx.scissor.bind(ctx);
 	glImports["glEnable"] = ctx.enable.bind(ctx);
 	glImports["glDisable"] = ctx.disable.bind(ctx);
 	glImports["glClearColor"] = ctx.clearColor.bind(ctx);
@@ -386,4 +387,5 @@ function setNoGLContext(glImports) {
 	setUnsupportedFunc(glImports, platfOpenGLName, "glDrawArraysInstanced");
 	setUnsupportedFunc(glImports, platfOpenGLName, "glDrawElementsInstanced");
 	setUnsupportedFunc(glImports, platfOpenGLName, "isContextLost");
+	setUnsupportedFunc(glImports, platfOpenGLName, "glScissor");
 }

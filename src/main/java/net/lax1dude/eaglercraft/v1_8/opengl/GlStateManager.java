@@ -196,6 +196,26 @@ public class GlStateManager {
 		}
 	}
 	
+	private static boolean scissorState = false;
+
+	public static void enableScissor() {
+	  if(!scissorState) {
+	    _wglEnable(RealOpenGLEnums.GL_SCISSOR_TEST);
+	    scissorState = true;
+	  }
+	}
+
+	public static void disableScissor() {
+	  if(scissorState) {
+	    _wglDisable(RealOpenGLEnums.GL_SCISSOR_TEST);
+	    scissorState = false;
+	  }
+	}
+
+	public static void glScissor(int x, int y, int width, int height) {
+	  _wglScissor(x, y, width, height);
+	}
+	
 	public static void pushLightCoords() {
 		int push = stateLightsStackPointer + 1;
 		if(push < stateLightsStack.length) {

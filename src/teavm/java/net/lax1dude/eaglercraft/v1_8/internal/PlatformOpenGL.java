@@ -167,6 +167,10 @@ public class PlatformOpenGL {
 		return exts;
 	}
 
+	public static void _wglScissor(int x, int y, int width, int height) {
+		ctx.scissor(x, y, width, height);
+	}
+
 	public static void _wglEnable(int glEnum) {
 		ctx.enable(glEnum);
 	}

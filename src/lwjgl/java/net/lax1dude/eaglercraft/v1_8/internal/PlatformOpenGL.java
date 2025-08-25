@@ -132,6 +132,10 @@ public class PlatformOpenGL {
 		if(hasEXTTextureFilterAnisotropic) exts.add("EXT_texture_filter_anisotropic");
 		return exts;
 	}
+	
+	public static void _wglScissor(int x, int y, int width, int height) {
+		  glScissor(x, y, width, height);
+	}
 
 	public static void _wglEnable(int glEnum) {
 		glEnable(glEnum);
